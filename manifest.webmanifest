@@ -1,0 +1,24 @@
+{
+  "name": "GloireTech-IA",
+  "short_name": "GloireTech",
+  "description": "Plateforme IA mobile-first, modulaire et sécurisée, pensée pour l’Afrique et le monde.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f4f7f3",
+  "theme_color": "#1a472a",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "assets/icons/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

@@ -5,26 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="GloireTech-IA — Intelligence africaine au service du monde. Plateforme IA mobile-first, modulaire et sécurisée.">
     <meta name="theme-color" content="#1a472a">
-    
     <title>GloireTech-IA — Innovation africaine accessible</title>
-    
     <link rel="manifest" href="manifest.webmanifest">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect fill='%231a472a' width='192' height='192'/><text x='96' y='120' font-size='80' font-weight='bold' fill='%23ffd700' text-anchor='middle' font-family='sans-serif'>G</text></svg>">
-    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect fill='%231a472a' width='192' height='192'/><text x='96' y='120' font-size='80' font-weight='bold' fill='%23ffd700' text-anchor='middle' font-family='sans-serif'>G</text></svg>">
-    
+    <link rel="icon" type="image/svg+xml" href="assets/icons/icon-192.svg">
+    <link rel="apple-touch-icon" href="assets/icons/icon-192.svg">
     <link rel="stylesheet" href="styles.css">
     <script>
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('service-worker.js').catch(err => {
+            navigator.serviceWorker.register('service-worker.js').catch((err) => {
                 console.warn('Service Worker registration failed:', err);
             });
         }
     </script>
 </head>
 <body>
-    <!-- Conteneur principal -->
     <div id="app" class="app-container">
-        <!-- Header -->
         <header class="app-header">
             <div class="header-brand">
                 <div class="logo">G</div>
@@ -38,8 +33,7 @@
             </button>
         </header>
 
-        <!-- Barre de navigation principale -->
-        <nav class="main-nav" role="navigation">
+        <nav class="main-nav" role="navigation" aria-label="Navigation principale">
             <button class="nav-btn active" data-view="dashboard" aria-current="page">
                 <span class="icon">📊</span>
                 <span class="label">Tableau de bord</span>
@@ -58,21 +52,12 @@
             </button>
         </nav>
 
-        <!-- Barre de recherche -->
         <div class="search-bar">
-            <input 
-                type="search" 
-                id="module-search" 
-                class="search-input" 
-                placeholder="Chercher un module..." 
-                aria-label="Rechercher un module"
-            >
+            <input id="module-search" type="search" class="search-input" placeholder="Chercher un module..." aria-label="Rechercher un module">
             <button class="search-btn" aria-label="Lancer la recherche">🔍</button>
         </div>
 
-        <!-- Zone principale de contenu -->
         <main class="main-content">
-            <!-- Vue Dashboard -->
             <section id="view-dashboard" class="view active">
                 <div class="view-header">
                     <h2>Tableau de bord</h2>
@@ -83,22 +68,10 @@
                     <h3>Notre mission</h3>
                     <p>Rendre l'intelligence artificielle, les outils numériques, le commerce en ligne et l'innovation <strong>accessibles aux Africains et au reste du monde</strong>.</p>
                     <div class="mission-pillars">
-                        <div class="pillar">
-                            <span class="pillar-icon">🌍</span>
-                            <span>Accessible</span>
-                        </div>
-                        <div class="pillar">
-                            <span class="pillar-icon">⚡</span>
-                            <span>Rapide</span>
-                        </div>
-                        <div class="pillar">
-                            <span class="pillar-icon">🔐</span>
-                            <span>Sécurisé</span>
-                        </div>
-                        <div class="pillar">
-                            <span class="pillar-icon">🧩</span>
-                            <span>Modulaire</span>
-                        </div>
+                        <div class="pillar"><span class="pillar-icon">🌍</span><span>Accessible</span></div>
+                        <div class="pillar"><span class="pillar-icon">⚡</span><span>Rapide</span></div>
+                        <div class="pillar"><span class="pillar-icon">🔐</span><span>Sécurisé</span></div>
+                        <div class="pillar"><span class="pillar-icon">🧩</span><span>Modulaire</span></div>
                     </div>
                 </div>
 
@@ -106,29 +79,23 @@
                     <p id="status-text">📡 Vérification de la connexion...</p>
                 </div>
 
-                <div class="modules-grid" id="dashboard-modules">
-                    <!-- Modules chargés dynamiquement -->
-                </div>
+                <div class="modules-grid" id="dashboard-modules"></div>
             </section>
 
-            <!-- Vue Modules -->
             <section id="view-modules" class="view">
                 <div class="view-header">
                     <h2>Explorer les modules</h2>
                     <p class="subtitle">Toutes les fonctionnalités disponibles</p>
                 </div>
-                <div class="modules-grid" id="all-modules">
-                    <!-- Modules chargés dynamiquement -->
-                </div>
+                <div class="modules-grid" id="all-modules"></div>
                 <div class="info-box">
-                    <p><strong>🟢 Fonctionnel</strong> : Module en production</p>
-                    <p><strong>🟡 Expérimental</strong> : Prototype en test</p>
-                    <p><strong>🔵 Démo</strong> : Démonstration sans données réelles</p>
-                    <p><strong>⚫ Indisponible</strong> : À venir</p>
+                    <p><strong>🟢 Fonctionnel</strong> : module actif et vérifié</p>
+                    <p><strong>🟡 Expérimental</strong> : prototype sous test</p>
+                    <p><strong>🔵 Démo</strong> : démonstration sans connexion à un service réel</p>
+                    <p><strong>⚫ Indisponible</strong> : à venir</p>
                 </div>
             </section>
 
-            <!-- Vue Assistant -->
             <section id="view-assistant" class="view">
                 <div class="view-header">
                     <h2>Assistant GloireTech</h2>
@@ -140,26 +107,20 @@
                         <div class="chat-message assistant-message">
                             <p><strong>Assistant GloireTech</strong></p>
                             <p>Bonjour ! Je suis l'assistant GloireTech-IA. Actuellement, je fonctionne en mode démonstration.</p>
-                            <p><em>Cette version ne dispose pas d'un modèle d'IA connecté. Je peux vous aider à explorer les modules, répondre à des questions sur les fonctionnalités disponibles et vous guider dans GloireTech-IA.</em></p>
+                            <p><em>Cette version ne dispose pas d'un modèle d'IA connecté. Je peux explorer les modules, expliquer les fonctions, guider les usages et tester des commandes AURÉLIS.</em></p>
                         </div>
                     </div>
 
                     <div class="assistant-input">
-                        <input 
-                            type="text" 
-                            id="assistant-input" 
-                            class="chat-input" 
-                            placeholder="Posez une question ou une commande..." 
-                            aria-label="Saisie assistant"
-                        >
+                        <input id="assistant-input" type="text" class="chat-input" placeholder="Posez une question ou une commande..." aria-label="Saisie assistant">
                         <button id="assistant-send" class="send-btn" aria-label="Envoyer">Envoyer</button>
                     </div>
 
                     <div class="info-box">
-                        <p><strong>💡 Essayez :</strong></p>
+                        <p><strong>💡 Exemples</strong></p>
                         <ul>
                             <li>"Quels modules sont disponibles ?"</li>
-                            <li>"Comment utiliser GloireTech-IA ?"</li>
+                            <li>"Décris les fonctionnalités principales"</li>
                             <li>"Qu'est-ce que AURÉLIS ?"</li>
                             <li>"AURÉLIS: hello"</li>
                         </ul>
@@ -167,14 +128,12 @@
                 </div>
             </section>
 
-            <!-- Vue Paramètres -->
             <section id="view-settings" class="view">
                 <div class="view-header">
                     <h2>Paramètres</h2>
                     <p class="subtitle">Personnalisez votre expérience</p>
                 </div>
 
-                <!-- Thème -->
                 <div class="settings-group">
                     <h3>🎨 Apparence</h3>
                     <div class="setting-item">
@@ -187,7 +146,6 @@
                     </div>
                 </div>
 
-                <!-- Langue -->
                 <div class="settings-group">
                     <h3>🌐 Langue</h3>
                     <div class="setting-item">
@@ -198,41 +156,38 @@
                             <option value="es">Español</option>
                         </select>
                     </div>
-                    <p class="setting-note">Les autres langues seront disponibles prochainement.</p>
+                    <p class="setting-note">Les autres langues seront ajoutées lors des prochaines itérations.</p>
                 </div>
 
-                <!-- Valeurs éthiques (Harmonia) -->
                 <div class="settings-group">
-                    <h3>✨ Valeurs éthiques (Harmonia)</h3>
+                    <h3>✨ Valeurs éthiques</h3>
                     <div class="setting-item">
                         <label for="ethics-mode">Mode de valeurs</label>
                         <select id="ethics-mode" class="setting-control">
-                            <option value="universal">Valeurs universelles (défaut)</option>
+                            <option value="universal">Valeurs universelles</option>
                             <option value="kingdom">Royaume de Dieu</option>
                             <option value="custom">Personnalisé</option>
                         </select>
                     </div>
-                    <p class="setting-note">Ces modes influencent les réponses et recommandations de l'assistant.</p>
+                    <p class="setting-note">Ces préférences sont transparents et modifiables.</p>
                 </div>
 
-                <!-- Mémoire utilisateur (Mnémos) -->
                 <div class="settings-group">
                     <h3>💾 Mémoire locale</h3>
                     <div class="setting-item">
                         <label>
                             <input type="checkbox" id="memory-enable" checked>
-                            Mémoriser mes préférences et historique
+                            Mémoriser mes préférences et historique local
                         </label>
-                        <p class="setting-note">Stockage local uniquement. Aucune donnée envoyée au serveur.</p>
+                        <p class="setting-note">Stockage local uniquement, sans clé secrète ni données sensibles.</p>
                     </div>
-                    <button id="export-data" class="secondary-btn">📥 Exporter mes données</button>
-                    <button id="delete-data" class="secondary-btn danger-btn">🗑️ Supprimer mes données</button>
+                    <button id="export-data" class="secondary-btn">📥 Exporter</button>
+                    <button id="delete-data" class="secondary-btn danger-btn">🗑️ Supprimer</button>
                 </div>
 
-                <!-- À propos et liens -->
                 <div class="settings-group">
                     <h3>ℹ️ À propos</h3>
-                    <p><strong>GloireTech-IA</strong> v0.1.0 (Prototype)</p>
+                    <p><strong>GloireTech-IA</strong> v0.1.0 (prototype)</p>
                     <p>Intelligence africaine au service du monde.</p>
                     <div class="link-group">
                         <a href="#privacy" class="text-link">📋 Confidentialité</a>
@@ -243,19 +198,19 @@
             </section>
         </main>
 
-        <!-- Footer -->
         <footer class="app-footer">
-            <p>&copy; 2026 GloireTech-IA. Tous droits réservés. Fait en Afrique pour le monde.</p>
+            <p>&copy; 2026 GloireTech-IA. Fait en Afrique pour le monde.</p>
         </footer>
     </div>
 
-    <!-- Scripts -->
     <script src="modules/gloire-core.js" defer></script>
     <script src="modules/velox.js" defer></script>
     <script src="modules/mnemos.js" defer></script>
     <script src="modules/harmonia.js" defer></script>
     <script src="modules/gloire-assistant.js" defer></script>
     <script src="utils/security.js" defer></script>
+    <script src="utils/payments.js" defer></script>
+    <script src="utils/abstraction.js" defer></script>
     <script src="app.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,95 @@
+{
+  "modules": [
+    {
+      "name": "GLOIRE CORE",
+      "icon": "🧠",
+      "description": "Noyau de navigation, orchestration, permissions et configuration de l'application.",
+      "state": "fonctionnel",
+      "nextSteps": "Améliorer la gestion des rôles et l'orchestration des vues."
+    },
+    {
+      "name": "VELOX",
+      "icon": "⚡",
+      "description": "Optimisation de la vitesse, audio, données et temps de chargement pour les téléphones modestes.",
+      "state": "fonctionnel",
+      "nextSteps": "Mettre en place des mesures plus poussées de performance et d'usage mémoire."
+    },
+    {
+      "name": "MNÉMOS",
+      "icon": "🧾",
+      "description": "Mémoire et préférences utilisateur locale, avec consentement et capacité d'export/suppression.",
+      "state": "expérimental",
+      "nextSteps": "Valider les restrictions de confidentialité et la gestion locale avancée."
+    },
+    {
+      "name": "AUTONOMIA",
+      "icon": "🤖",
+      "description": "Aide à l'automatisation de tâches de manière sécurisée et transparente.",
+      "state": "expérimental",
+      "nextSteps": "Définir des workflows autorisés et leurs limites."
+    },
+    {
+      "name": "GNOSIS",
+      "icon": "📚",
+      "description": "Recherche, apprentissage, aide aux étudiants et explications pédagogiques.",
+      "state": "démo",
+      "nextSteps": "Connecter des sources documentaires, tutoriels et assistants de recherche."
+    },
+    {
+      "name": "HARMONIA",
+      "icon": "✨",
+      "description": "Paramètres de valeurs, style et mode de messages orientés par l'éthique ou la spiritualité.",
+      "state": "fonctionnel",
+      "nextSteps": "Ajouter des profils plus personnalisés sur la base du consentement."
+    },
+    {
+      "name": "LUMEN",
+      "icon": "🎨",
+      "description": "Création assistée de textes, visuels, idées et scénarios multimédias.",
+      "state": "démo",
+      "nextSteps": "Connecter des modèles ou API externes à la demande."
+    },
+    {
+      "name": "AURÉLIS",
+      "icon": "🧩",
+      "description": "Prototype d'un langage informatique expérimental avec interpréteur et documentation minimaliste.",
+      "state": "expérimental",
+      "nextSteps": "Étendre la grammaire et la validation des commandes."
+    },
+    {
+      "name": "GLOIRE COMMERCE",
+      "icon": "🛒",
+      "description": "Prestations e-commerce, inventaire, promotions, vente de produits et liens de vente.",
+      "state": "démo",
+      "nextSteps": "Préparer les connecteurs à des solutions de paiement et de catalogue sécurisées."
+    },
+    {
+      "name": "GLOIRE FINANCE",
+      "icon": "💳",
+      "description": "Suivi des paiements, rapprochements, journaux et tableaux de bord de trésorerie.",
+      "state": "indisponible",
+      "nextSteps": "Réaliser un backend dédié avec vérification officielle des transactions."
+    },
+    {
+      "name": "GLOIRE ENGINEERING",
+      "icon": "🛠️",
+      "description": "Aide à la génération de code, à l'analyse technique et au prototypage rapide.",
+      "state": "expérimental",
+      "nextSteps": "Améliorer les modèles de génération de code et la documentation produit."
+    },
+    {
+      "name": "GLOIRE STUDIO",
+      "icon": "🎯",
+      "description": "Préparation de visuels marketing, logos, affiches, fiches produits et contenus marketing.",
+      "state": "démo",
+      "nextSteps": "Ajouter des intégrations à des services d'édition ou création d'images."
+    },
+    {
+      "name": "GLOIRE ASSISTANT",
+      "icon": "💬",
+      "description": "Interface principale de conversation, aide et guidance des utilisateurs et modules.",
+      "state": "fonctionnel",
+      "nextSteps": "Connecter un model provider évolutif à l'interface de discussion."
+    }
+  ]
+}

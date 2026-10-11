@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="0 0 192 192" role="img" aria-label="GloireTech-IA logo">
+  <rect width="192" height="192" rx="24" fill="#1a472a"/>
+  <circle cx="96" cy="96" r="64" fill="#c8b34e" opacity="0.25"/>
+  <path d="M80 52h32v88H80z" fill="#f7d36b"/>
+  <path d="M64 84h64v24H64z" fill="#f7d36b"/>
+  <text x="96" y="118" text-anchor="middle" font-size="72" font-weight="700" fill="#fff" font-family="Segoe UI, Arial, sans-serif">G</text>
+</svg>
