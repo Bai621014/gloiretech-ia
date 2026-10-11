@@ -49,8 +49,8 @@ function applyTheme(themePreference) {
     document.body.setAttribute('data-theme', resolvedTheme);
     const toggle = document.getElementById('theme-toggle');
     if (toggle) {
-        toggle.innerHTML = resolvedTheme === 'dark' 
-            ? '<span class="theme-icon">☀️</span>' 
+        toggle.innerHTML = resolvedTheme === 'dark'
+            ? '<span class="theme-icon">☀️</span>'
             : '<span class="theme-icon">🌙</span>';
     }
 }
@@ -295,7 +295,7 @@ function addAssistantMessage(text, sender = 'assistant') {
     wrapper.innerHTML = paragraphs;
     chatDisplay.appendChild(wrapper);
     chatDisplay.scrollTop = chatDisplay.scrollHeight;
-    
+
     appState.chatHistory.push({ sender, text, timestamp: new Date().toISOString() });
 }
 
